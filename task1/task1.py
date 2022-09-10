@@ -1,4 +1,5 @@
-n, m = int(input()), int(input())
+import sys
+n, m = int(sys.argv[1]), int(sys.argv[2])
 m = m-1
 targetList = []
 i = 0
@@ -9,4 +10,4 @@ while i < n*m:
     i += 1
     if i%n == 0 and i%m == 0 and targetList:
         break
-print(targetList)
+print(''.join(map(str, targetList)))
