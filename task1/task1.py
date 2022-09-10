@@ -3,7 +3,8 @@ n, m = int(sys.argv[1]), int(sys.argv[2])
 m = m-1
 targetList = []
 i = 0
-while i < n*m:
+iMax = n*m
+while i < iMax:
     x = i%n+1
     if i%m == 0:
         targetList.append(x)
